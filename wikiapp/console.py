@@ -1,12 +1,12 @@
 import click
-from wikiapp import _version_
+from wikiapp import __version__
 import requests
 import textwrap
 
 API_URL = "https://en.wikipedia.org/api/rest_v1/page/random/summary"
 
 @click.command()
-@click.version_option(version=_version_)
+@click.version_option(version=__version__)
 def main():
     """The ultramodern Python project."""
     with requests.get(API_URL) as response:

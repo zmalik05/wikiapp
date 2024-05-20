@@ -2,8 +2,11 @@
 name = "wikiapp"
 version = "0.1.0"
 description = "Add a short description here"
-requires-python = ">= 3.11"
+requires-python = ">= 3.10"
 dependencies = []
+
+[project.scripts]
+wikiapp = "wikiapp.console:main"
 
 [build-system]
 requires = ["setuptools"]
@@ -17,6 +20,7 @@ platforms = ["linux-64"]
 wikiapp = { path = ".", editable = true }
 
 [tool.pixi.tasks]
+program = "python wikiapp/console.py"
 
 [tool.pixi.dependencies]
 python = ">=3.12.3,<3.13"
