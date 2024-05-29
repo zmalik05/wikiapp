@@ -1,0 +1,186 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "cdc776f1-a41c-40d9-a7fb-e3769822feb5",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "title: wikipedia module\n",
+    "---"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8c591ca2-23f6-4ea5-b13d-5df766f681a4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from wikiapp.wikipedia import random_page"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "a2a0ea40-9c47-400e-b2b7-99a555718ef9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from nbdev import show_doc"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "752d9b03-bcd6-45ae-9f4d-55b56f89d4b7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/markdown": [
+       "---\n",
+       "\n",
+       "### '\n",
+       "\n"
+      ],
+      "text/plain": [
+       "---\n",
+       "\n",
+       "### '\n"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "show_doc(page)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "5587eaae-d921-4d00-b066-3e3ca3c960e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/markdown": [
+       "---\n",
+       "\n",
+       "### random_page\n",
+       "\n",
+       ">      random_page (language:str='en')\n",
+       "\n",
+       "*Get a random page from Wikipedia*"
+      ],
+      "text/plain": [
+       "---\n",
+       "\n",
+       "### random_page\n",
+       "\n",
+       ">      random_page (language:str='en')\n",
+       "\n",
+       "*Get a random page from Wikipedia*"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "show_doc(random_page)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "09e3f042-bdf5-47a2-ae13-75f04cb59622",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "96743731-100f-4878-916e-120dc781b268",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "TITLE Gaspar Frutuoso\n",
+      "EXTRACT Gaspar Frutuoso was a Portuguese priest, historian and humanist from the island of São Miguel, in the Portuguese archipelago of the Azores. His major contribution to Portuguese history was his detailed descriptions of the history and geography of the Azores, Madeira, Canary Islands and references to Cape Verde, which he published in his six-part tome Saudades da Terra, as well as Saudades do Céu. He is normally cited in settlement history of the islands of the Azores.\n"
+     ]
+    }
+   ],
+   "source": [
+    "page = random_page()\n",
+    "print(\"TITLE\", page.title)\n",
+    "print(\"EXTRACT\", page.extract)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a4596417-e8a1-4268-b19f-398b4152de7f",
+   "metadata": {},
+   "source": [
+    "You can change the language you want:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "127bff69-92fd-491a-a196-2dd4075ac68c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "TITLE Kim Han-min\n",
+      "EXTRACT Kim Han-min is a South Korean film director and screenwriter. He directed the feature films Paradise Murdered (2007), Handphone (2009), War of the Arrows (2011), and The Admiral: Roaring Currents (2014).\n"
+     ]
+    }
+   ],
+   "source": [
+    "page = random_page()\n",
+    "print(\"TITLE\", page.title)\n",
+    "print(\"EXTRACT\", page.extract)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "05ffaec6-498d-4589-803c-86526eaf7266",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

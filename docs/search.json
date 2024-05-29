@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Wikiapp docs",
+    "section": "",
+    "text": "Welcome to the documentation for Wikiapp! We are so glad you here.\nThis library will let you get random wikipedia page excerpts, in any language.\nYeah we know it does not do much! But it is a start.\n```bash &gt; wikiapp",
+    "crumbs": [
+      "Wikiapp docs"
+    ]
+  },
+  {
+    "objectID": "Console.html",
+    "href": "Console.html",
+    "title": "Console Module",
+    "section": "",
+    "text": "from wikiapp.console import main\n\n\nfrom nbdev import show_doc\nfrom click.testing import CliRunner\nrunner = CliRunner()\n\n\n\n\n\n &lt;Command main&gt; (*args:Any, **kwargs:Any)\n\n*This is the console interface to ‘random_page’ function in wikipedia.py.\nIt comes with cool colors!*\nExamples\n\nCliRunner.invoke(main)\n\nNameError: name 'CliRunner' is not defined",
+    "crumbs": [
+      "Console Module"
+    ]
+  }
+]

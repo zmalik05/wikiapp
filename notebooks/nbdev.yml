@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "wikiapp"
+  site-url: "https://zmalik05.github.io/wikiapp"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/zmalik05/wikiapp"
