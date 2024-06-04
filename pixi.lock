@@ -1180,9 +1180,9 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.17.0-pyhd8ed1ab_0.conda
       - pypi: https://files.pythonhosted.org/packages/2b/03/13dde6512ad7b4557eb792fbcf0c653af6076b81e5941d36ec61f7ce6028/astunparse-1.6.3-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/fb/c2/f2bf7d821f04556efde49a1af531bdf287b27c19225852287cbfca953300/execnb-0.1.6-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/29/84/b2ebc7995de28820db780afb13c0045bbe25ce7d5e130c09f548440ae708/fastcore-1.5.42-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/4d/45/75988481d9483d192a97942872713c2fbafe732e9074f971f6581557b2a0/fastcore-1.5.43-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/71/6c/2913287a13bc1a5233836d66c3efd6d7bd7d6625fb37c31d36429dec44a4/ghapi-1.0.5-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/7c/3d544278e57fa7d10d6be101889d0d10d1f0b85c105d4b1271d14435533c/nbdev-2.3.23-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/f0/0d/feb9c6e69c2d61c426c64d406aafbcbd86db3dcfbc6b80308e34313fdc98/nbdev-2.3.25-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8a/6a/19e9fe04fca059ccf770861c7d5721ab4c2aebc539889e97c7977528a53b/pip-24.0-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/85/e0/2a9f43008902427b5f074c497705d6ef8f815c85d4bc25fbf83f720a6159/watchdog-4.0.1-py3-none-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/7d/cd/d7460c9a869b16c3dd4e1e403cce337df165368c71d6af229a74699622ce/wheel-0.43.0-py3-none-any.whl
@@ -3558,21 +3558,6 @@ packages:
   timestamp: 1710362144873
 - kind: pypi
   name: fastcore
-  version: 1.5.42
-  url: https://files.pythonhosted.org/packages/29/84/b2ebc7995de28820db780afb13c0045bbe25ce7d5e130c09f548440ae708/fastcore-1.5.42-py3-none-any.whl
-  sha256: 9f749a7aa4aeff37446bf114edafcac277ffb12cfef29f8219d5928b447e5486
-  requires_dist:
-  - packaging
-  - numpy ; extra == 'dev'
-  - nbdev>=0.2.39 ; extra == 'dev'
-  - matplotlib ; extra == 'dev'
-  - pillow ; extra == 'dev'
-  - torch ; extra == 'dev'
-  - pandas ; extra == 'dev'
-  - nbclassic ; extra == 'dev'
-  requires_python: '>=3.7'
-- kind: pypi
-  name: fastcore
   version: 1.5.43
   url: https://files.pythonhosted.org/packages/4d/45/75988481d9483d192a97942872713c2fbafe732e9074f971f6581557b2a0/fastcore-1.5.43-py3-none-any.whl
   sha256: f1b6280f7f9e8d2d5f3659ff55f1e34afbf44e75a3818e22bc97fc36678371d4
@@ -5627,29 +5612,6 @@ packages:
   - pkg:pypi/nbconvert
   size: 189004
   timestamp: 1714477286178
-- kind: pypi
-  name: nbdev
-  version: 2.3.23
-  url: https://files.pythonhosted.org/packages/24/7c/3d544278e57fa7d10d6be101889d0d10d1f0b85c105d4b1271d14435533c/nbdev-2.3.23-py3-none-any.whl
-  sha256: 5ff84611953429971790ca7ba00aa46957305c40bf3c60aa23ad9320b26a72e1
-  requires_dist:
-  - packaging
-  - fastcore>=1.5.27
-  - execnb>=0.1.4
-  - astunparse
-  - ghapi>=1.0.3
-  - watchdog
-  - asttokens
-  - pyyaml
-  - ipywidgets ; extra == 'dev'
-  - nbdev-numpy ; extra == 'dev'
-  - nbdev-stdlib ; extra == 'dev'
-  - pandas ; extra == 'dev'
-  - matplotlib ; extra == 'dev'
-  - black ; extra == 'dev'
-  - svg-py ; extra == 'dev'
-  - nbclassic ; extra == 'dev'
-  requires_python: '>=3.7'
 - kind: pypi
   name: nbdev
   version: 2.3.25
@@ -8933,14 +8895,6 @@ packages:
 - kind: pypi
   name: watchdog
   version: 4.0.1
-  url: https://files.pythonhosted.org/packages/52/67/62eea67ef31214ea4867b97351ea4f6b3a52dd1c4c93360ff8ad6e4ad72f/watchdog-4.0.1-cp312-cp312-macosx_11_0_arm64.whl
-  sha256: 62c613ad689ddcb11707f030e722fa929f322ef7e4f18f5335d2b73c61a85c28
-  requires_dist:
-  - pyyaml>=3.10 ; extra == 'watchmedo'
-  requires_python: '>=3.8'
-- kind: pypi
-  name: watchdog
-  version: 4.0.1
   url: https://files.pythonhosted.org/packages/85/e0/2a9f43008902427b5f074c497705d6ef8f815c85d4bc25fbf83f720a6159/watchdog-4.0.1-py3-none-win_amd64.whl
   sha256: 7577b3c43e5909623149f76b099ac49a1a01ca4e167d1785c76eb52fa585745a
   requires_dist:
@@ -8951,6 +8905,14 @@ packages:
   version: 4.0.1
   url: https://files.pythonhosted.org/packages/a9/eb/8d1f9150dd5e86082913ab15d4fd4bea436186845be1b1752efd19b020d1/watchdog-4.0.1-cp312-cp312-macosx_10_9_x86_64.whl
   sha256: 611be3904f9843f0529c35a3ff3fd617449463cb4b73b1633950b3d97fa4bfb7
+  requires_dist:
+  - pyyaml>=3.10 ; extra == 'watchmedo'
+  requires_python: '>=3.8'
+- kind: pypi
+  name: watchdog
+  version: 4.0.1
+  url: https://files.pythonhosted.org/packages/52/67/62eea67ef31214ea4867b97351ea4f6b3a52dd1c4c93360ff8ad6e4ad72f/watchdog-4.0.1-cp312-cp312-macosx_11_0_arm64.whl
+  sha256: 62c613ad689ddcb11707f030e722fa929f322ef7e4f18f5335d2b73c61a85c28
   requires_dist:
   - pyyaml>=3.10 ; extra == 'watchmedo'
   requires_python: '>=3.8'
@@ -9042,9 +9004,9 @@ packages:
   requires_python: '>=3.8'
 - kind: pypi
   name: wikiapp-zhm
-  version: 0.1.0
+  version: 0.1.1
   path: .
-  sha256: 3ef42bf40ba424cc44a7adde3e4e734b427effa761616014b72cfc2f632ecad9
+  sha256: 7ac9fd6d9f9d04ae81b24dc98cd12b151c23d842ba1bbbbc6726a9bbf12e7601
   requires_dist:
   - coverage[toml] ; extra == 'test'
   - nbdev ; extra == 'docs'

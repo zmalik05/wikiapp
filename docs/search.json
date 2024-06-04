@@ -14,7 +14,7 @@
     "href": "Console.html",
     "title": "Console Module",
     "section": "",
-    "text": "from wikiapp.console import main\n\n\nfrom nbdev import show_doc\nfrom click.testing import CliRunner\nrunner = CliRunner()\n\n\n\n\n\n &lt;Command main&gt; (*args:Any, **kwargs:Any)\n\n*This is the console interface to ‘random_page’ function in wikipedia.py.\nIt comes with cool colors!*\nExamples\n\nCliRunner.invoke(main)\n\nNameError: name 'CliRunner' is not defined",
+    "text": "from wikiapp.console import main\n\n/home/zmalik1/wikiapp/wikiapp/__init__.py:7: UserWarning: Could not determine version of wikiapp_rd\n  warnings.warn(\"Could not determine version of wikiapp_rd\", stacklevel=1)\n/home/zmalik1/wikiapp/wikiapp/__init__.py:8: UserWarning: No package metadata was found for wikiapp_rd\n  warnings.warn(str(e), stacklevel=1)\n\n\n\nfrom nbdev import show_doc\nfrom click.testing import CliRunner\nrunner = CliRunner()\n\n\n\n\n\n &lt;Command main&gt; (*args:Any, **kwargs:Any)\n\n*This is the console interface to ‘random_page’ function in wikipedia.py.\nIt comes with cool colors!*\nExamples\n\nCliRunner.invoke(main)\n\nNameError: name 'CliRunner' is not defined",
     "crumbs": [
       "Console Module"
     ]

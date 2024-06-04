@@ -1,6 +1,6 @@
 [project]
 name = "wikiapp_zhm"
-version = "0.1.0"
+version = "0.1.1"
 description = "Add a short description here"
 requires-python = ">= 3.10"
 dependencies = []
@@ -28,7 +28,7 @@ platforms = ["osx-arm64", "linux-64", 'win-64', 'osx-64']
 wikiapp_zhm = { path = ".", editable = true }
 
 [tool.pixi.feature.docs.tasks]
-docs = "mkdir -p docs; cd notebooks; nbdev_docs; cp -r _docs/*../* ../docs/; cd.."
+docs = "mkdir -p docs; cd notebooks; nbdev_docs; cp -r _docs/* ../docs/; cd .."
 
 [tool.pixi.tasks]
 program = "python wikiapp/console.py"
