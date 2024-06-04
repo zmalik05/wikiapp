@@ -1,5 +1,5 @@
 [project]
-name = "wikiapp"
+name = "wikiapp_zhm"
 version = "0.1.0"
 description = "Add a short description here"
 requires-python = ">= 3.10"
@@ -18,13 +18,14 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["wikiapp"]
+package-dir = {"" = "."}
 
 [tool.pixi.project]
 channels = ["conda-forge"]
 platforms = ["osx-arm64", "linux-64", 'win-64', 'osx-64']
 
 [tool.pixi.pypi-dependencies]
-wikiapp = { path = ".", editable = true }
+wikiapp_zhm = { path = ".", editable = true }
 
 [tool.pixi.feature.docs.tasks]
 docs = "mkdir -p docs; cd notebooks; nbdev_docs; cp -r _docs/*../* ../docs/; cd.."
@@ -71,6 +72,14 @@ mypy = ">=0.812,<1.11"
 [tool.pixi.feature.typing.tasks]
 typing = "mypy ."
 
+[tool.pixi.feature.build.dependencies]
+build = ">=0.7.0,<0.8"
+twine = ">=3.3.0,<5.2"
+
+[tool.pixi.feature.build.tasks]
+publish = "python -m twine upload --repository testpypi dist/*"
+build = "python -m build"
+
 
 [tool.pixi.feature.docs.dependencies]
 quarto = ">=1.4.550,<1.5"
@@ -82,7 +91,8 @@ default = {solve-group = "default"}
 test = { features = ["test"], solve-group = "default" }
 py310test = { features = ["test", "py310"], solve-group = "py310" }
 py311test = { features = ["test", "py311"], solve-group = "py311" }
-dev = { features = ["test", "lintformat", "typing", "docs"], solve-group = "default" }
+build = { features = ["build"], solve-group = "default" }
+dev = { features = ["test", "lintformat", "typing", "docs", "build",], solve-group = "default" }
 
 [tool.pyright]
 venvPath = "."

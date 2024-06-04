@@ -1,10 +1,9 @@
 from unittest.mock import Mock
 
-from wikiapp import wikipedia
-
 import pytest
-
 from click import ClickException
+
+from wikiapp import wikipedia
 
 
 def test_random_page_uses_given_language(mock_requests_get: Mock) -> None:
